@@ -3,8 +3,6 @@ import api from "../../services/api";
 import { Link } from "react-router-dom";
 import "./home.css";
 
-// /movie/now_playing?api_key=2ae36e1bb31154c3bfa66bb0492567d3&language=pt-BR
-
 function Home() {
   const [filmes, setFilmes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,7 +16,7 @@ function Home() {
           page: 1,
         },
       });
-      setFilmes(response.data.results.slice(0, 10));
+      setFilmes(response.data.results);
       setLoading(false);
     }
 
@@ -26,7 +24,8 @@ function Home() {
   }, []);
   if (loading) {
     return (
-      <div className="loading">
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
         <h2>Carregando filmes....</h2>
       </div>
     );

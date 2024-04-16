@@ -1,27 +1,28 @@
 header {
+  background-color: #111; /* Cor de fundo do cabeçalho */
+  padding: 2rem;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  width: 100%;
-  height: 60px;
-  background-color: #000;
+  align-items: center;
 }
 
 .logo {
+  color: #e50914; /* Cor do texto da logo */
+  font-size: 2.0rem;
   text-decoration: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: #fff;
-  font-weight: bold;
 }
 
-.favoritos{
-    cursor: pointer;
-    background-color: #fff;
-    padding: 5px 14px;
-    text-decoration: none;
-    color: #000;
-    border-radius: 4px;
+.favoritos {
+  color: #fff; /* Cor do texto do link "Meus Filmes" */
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 2px solid #e50914; /* Cor da borda */
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-
+.favoritos:hover {
+  background-color: #e50914; /* Cor de fundo ao passar o mouse */
+  color: #111; /* Cor do texto ao passar o mouse */
+}

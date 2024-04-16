@@ -1,0 +1,99 @@
+.filme-info {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+.filme-info h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.filme-info img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+.filme-info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.filme-info span {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.filme-info strong {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0px 1rem;
+  border-radius: 0.5rem;
+}
+
+.loading-spinner {
+  border: 0.6rem solid rgba(0, 0, 0, 0.1);
+  border-top: 0.6rem solid #e50914;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5z0px;
+  animation: spin 1s linear infinite;
+  margin-right: 2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-container h2 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+
+.area-buttons {
+  margin-top: 20px;
+}
+
+.area-buttons button {
+  background-color: #e50914; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.area-buttons button a {
+  color: #fff; /* Cor do texto */
+  text-decoration: none;
+}
+
+.area-buttons button:hover {
+  background-color: #b2070e; /* Cor de fundo ao passar o mouse */
+}
+
+.area-buttons button:disabled {
+  background-color: #ccc; /* Cor de fundo quando desabilitado */
+  color: #666; /* Cor do texto quando desabilitado */
+  cursor: not-allowed;
+}
+
